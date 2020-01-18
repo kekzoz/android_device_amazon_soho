@@ -11,7 +11,11 @@ PRODUCT_NAME := lineage_soho
 PRODUCT_BOARD := soho
 PRODUCT_DEVICE := soho
 PRODUCT_BRAND := Amazon
+
+# Use android if Amazon apps misbehave
 PRODUCT_MANUFACTURER := Amazon
+# PRODUCT_MANUFACTURER := android
+
 PRODUCT_MODEL := Kindle Fire HD (3rd Generation)
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
