@@ -1,10 +1,13 @@
 $(call inherit-product, device/amazon/soho/full_soho.mk)
 
-# Inherit some common EV stuff.
-$(call inherit-product, vendor/ev/config/common_full_tablet_wifionly.mk)
+# Inherit some common LineageOS stuff.
+$(call inherit-product, vendor/cm/config/common_full_tablet_wifionly.mk)
+
+# LineageOS specific overlay
+# DEVICE_PACKAGE_OVERLAYS += device/amazon/soho/overlay/frameworks
 
 PRODUCT_RELEASE_NAME := KFSOWI
-PRODUCT_NAME := ev_soho
+PRODUCT_NAME := lineage_soho
 PRODUCT_BOARD := soho
 PRODUCT_DEVICE := soho
 PRODUCT_BRAND := Amazon
@@ -21,8 +24,10 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 PRODUCT_CODENAME := lectio
 PRODUCT_VERSION_DEVICE_SPECIFIC := p1
 
-PRODUCT_MOTD :="\n\n\n--------------------MESSAGE---------------------\nThank you for choosing Evervolv for your Kindle Fire HD\nPlease visit us at \#evervolv on irc.freenode.net\nFollow @preludedrew for the latest Evervolv updates\nGet the latest rom at evervolv.com\n------------------------------------------------\n"
+PRODUCT_MOTD :="\n\n\n--------------------MESSAGE---------------------\nThank you for choosing Lineage OS for your Kindle Fire HD\n"
 
 # Bootanimation
-TARGET_BOOTANIMATION_HALF_RES := true
-BOOT_ANIMATION_SIZE := xga
+#TARGET_BOOTANIMATION_HALF_RES := true
+#BOOT_ANIMATION_SIZE := xga
+TARGET_SCREEN_HEIGHT := 800
+TARGET_SCREEN_WIDTH := 1280
