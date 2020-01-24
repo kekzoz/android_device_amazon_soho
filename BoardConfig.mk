@@ -39,7 +39,7 @@ BOARD_KERNEL_BASE := 0x80000000
 BOARD_KERNEL_PAGESIZE := 2048
 TARGET_KERNEL_SOURCE := kernel/ti/omap
 TARGET_KERNEL_CONFIG := android_soho_defconfig
-TARGET_KERNEL_CUSTOM_TOOLCHAIN := arm-eabi-4.8
+# TARGET_KERNEL_CUSTOM_TOOLCHAIN := arm-eabi-4.8
 
 ifneq (,$(strip $(wildcard $(TARGET_KERNEL_SOURCE)/drivers/gpu/ion/ion_page_pool.c)))
 export BOARD_USE_TI_LIBION := false
