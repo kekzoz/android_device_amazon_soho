@@ -25,7 +25,7 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     BUILD_NUMBER=228551
 
 # Set up the product codename, build version & MOTD.
-PRODUCT_CODENAME := lectio
+PRODUCT_CODENAME := soho
 PRODUCT_VERSION_DEVICE_SPECIFIC := p1
 
 PRODUCT_MOTD :="\n\n\n--------------------MESSAGE---------------------\nThank you for choosing Lineage OS for your Kindle Fire HD\n"
